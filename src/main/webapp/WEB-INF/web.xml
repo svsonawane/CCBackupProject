@@ -104,4 +104,14 @@
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
 
+  <!-- Ping servlet to keep Aiven MySQL alive -->
+  <servlet>
+    <servlet-name>PingServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.PingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PingServlet</servlet-name>
+    <url-pattern>/ping</url-pattern>
+  </servlet-mapping>
+
 </web-app>
